@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "2d90d22d-9d2c-4859-97de-ebb9c07e2348",
+		"name": "CursoBE3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23861177"
+	},
+	"item": [
+		{
+			"name": "Get_Pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/mocks/mockingpets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mocks",
+						"mockingpets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/mocks/mockingusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mocks",
+						"mockingusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate_Users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"users\": 10,\n  \"pets\": 5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/mocks/generateUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mocks",
+						"generateUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate_Pets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"users\": 10,\n  \"pets\": 5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/mocks/generatePets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mocks",
+						"generatePets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
